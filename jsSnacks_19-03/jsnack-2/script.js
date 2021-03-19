@@ -54,7 +54,9 @@ for (i = 0; i < squadre.length; i++) {
 // creo un array con i punteggi finali
 var punteggi = [];
 for (i = 0; i < squadre.length; i++) {
-   punteggi.nome = squadre[i].nome;
-   punteggi.falli = squadre[i].falli;
+   punteggi.push({
+      nome: squadre[i].nome,
+      falli: squadre[i].falli
+   });
 }
-console.log(punteggi)
+console.log(punteggi);
